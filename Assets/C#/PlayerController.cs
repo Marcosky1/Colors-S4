@@ -53,6 +53,15 @@ public class PlayerController : MonoBehaviour
                 playerHealth.TakeDamage(1);
             }
         }
+        if (collision.gameObject.CompareTag("NextLevelObject"))
+        {
+            GameEvents.NextLevel?.Invoke();
+        }
+
+        if (collision.gameObject.CompareTag("VictoryObject"))
+        {
+            GameEvents.PlayerWon?.Invoke();
+        }
     }
 
     private bool IsSameColor(GameObject obstacle)
