@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameConditionHandler conditionHandler;
     public float speed = 5f;
     public float jumpForce = 10f;
     private Rigidbody2D rb;
@@ -60,7 +61,12 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("VictoryObject"))
         {
-            GameEvents.PlayerWon?.Invoke();
+            conditionHandler.WinGame();
+        }
+
+        if (collision.gameObject.CompareTag("DeathObject"))
+        {
+            conditionHandler.LoseGame();
         }
     }
 

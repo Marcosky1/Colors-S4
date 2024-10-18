@@ -1806,6 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c0501f59a47af469e6e231be64236c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreHandler: {fileID: 0}
 --- !u!114 &988568134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1818,6 +1819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c993dcb4bb377419c8b5856eb44451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthHandler: {fileID: 11400000, guid: 39ee555d94851a744ad8492bc3543a24, type: 2}
   maxHealth: 10
 --- !u!114 &988568135
 MonoBehaviour:
@@ -1831,6 +1833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a6a91a2fa464145a69de990a9736c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  conditionHandler: {fileID: 0}
   speed: 5
   jumpForce: 5
   groundCheck: {fileID: 626183412}

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public PlayerHealthHandler healthHandler;
     public int maxHealth = 10;
     private int currentHealth;
     private SpriteRenderer spriteRenderer;
@@ -10,13 +11,13 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        GameEvents.OnHealthUpdated?.Invoke(currentHealth);
+        healthHandler.UpdateHealth(currentHealth);
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        GameEvents.OnHealthUpdated?.Invoke(currentHealth);
+        healthHandler.UpdateHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -27,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
     public void Heal(int amount)
     {
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-        GameEvents.OnHealthUpdated?.Invoke(currentHealth);
+        healthHandler.UpdateHealth(currentHealth);
     }
 
     private bool IsSameColor(GameObject obstacle)

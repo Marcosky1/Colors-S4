@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
+    public PlayerScoreHandler scoreHandler;
     private int currentScore = 0;
 
     void OnEnable()
@@ -17,12 +18,7 @@ public class PlayerScore : MonoBehaviour
     private void AddScore(int value)
     {
         currentScore += value;
-        UpdateScoreUI();
-    }
-
-    private void UpdateScoreUI()
-    {
-        GameEvents.OnScoreUIUpdate?.Invoke(currentScore); 
+        scoreHandler.UpdateScore(currentScore);
     }
 }
 
