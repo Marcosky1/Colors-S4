@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck; 
     public LayerMask groundLayer;
 
+    public GameStateEvent gameStateEvent;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -55,12 +56,12 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("NextLevelObject"))
         {
-            GameEvents.NextLevel?.Invoke();
+            gameStateEvent.RaiseEvent("NextLevel");
         }
 
         if (collision.gameObject.CompareTag("VictoryObject"))
         {
-            GameEvents.PlayerWon?.Invoke();
+            gameStateEvent.RaiseEvent("Victory");
         }
     }
 

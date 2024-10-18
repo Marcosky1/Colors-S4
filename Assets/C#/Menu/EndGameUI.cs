@@ -12,6 +12,7 @@ public class EndGameUI : MonoBehaviour
     public Button retryButton;
     public Button menuButton;
     public Button nextLevelButton;
+    public GameStateEvent gameStateEvent;
 
     private void OnEnable()
     {

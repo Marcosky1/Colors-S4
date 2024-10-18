@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3950930390318624278, guid: db9bc44474931f9448641266131730e0, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 4055903941040289257, guid: db9bc44474931f9448641266131730e0, type: 3}
       propertyPath: m_Name
       value: Heart (4)
@@ -499,6 +503,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.7
@@ -601,6 +609,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3950930390318624278, guid: db9bc44474931f9448641266131730e0, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 4055903941040289257, guid: db9bc44474931f9448641266131730e0, type: 3}
       propertyPath: m_Name
       value: Heart (2)
@@ -749,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 2140932741}
+  lifeEvent: {fileID: 11400000, guid: c2dc70341e8fb5046a7f3f9887ff5098, type: 2}
 --- !u!114 &352068637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1285186233}
+  scoreEvent: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
 --- !u!114 &352068638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,6 +795,7 @@ MonoBehaviour:
   retryButton: {fileID: 1243034240}
   menuButton: {fileID: 1177671183}
   nextLevelButton: {fileID: 1770851191}
+  gameStateEvent: {fileID: 0}
 --- !u!1 &366919996
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,6 +839,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.37
@@ -890,6 +909,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.13
@@ -1225,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3950930390318624278, guid: db9bc44474931f9448641266131730e0, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 4055903941040289257, guid: db9bc44474931f9448641266131730e0, type: 3}
       propertyPath: m_Name
       value: Heart
@@ -1333,6 +1360,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.34
@@ -1399,6 +1430,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.97
@@ -1583,6 +1618,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3950930390318624278, guid: db9bc44474931f9448641266131730e0, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 4055903941040289257, guid: db9bc44474931f9448641266131730e0, type: 3}
       propertyPath: m_Name
       value: Heart (1)
@@ -1806,6 +1845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82c0501f59a47af469e6e231be64236c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScore: 0
+  scoreEvent: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
 --- !u!114 &988568134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,6 +1860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+  lifeEvent: {fileID: 11400000, guid: c2dc70341e8fb5046a7f3f9887ff5098, type: 2}
+  playerDeathEvent: {fileID: 11400000, guid: c2dc70341e8fb5046a7f3f9887ff5098, type: 2}
 --- !u!114 &988568135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1837,6 +1880,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
+  gameStateEvent: {fileID: 0}
 --- !u!114 &988568136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1944,7 +1988,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &988568140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2136,6 +2180,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.81
@@ -2927,6 +2975,10 @@ PrefabInstance:
       propertyPath: value
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8054596717736577769, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 8461758017913808071, guid: b6c83f1b562efe94b812e9d3702aa333, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6919298
@@ -3299,6 +3351,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3950930390318624278, guid: db9bc44474931f9448641266131730e0, type: 3}
+      propertyPath: scoreEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 62cbcaec9854cb44397dcf77f9db4382, type: 2}
     - target: {fileID: 4055903941040289257, guid: db9bc44474931f9448641266131730e0, type: 3}
       propertyPath: m_Name
       value: Heart (3)
@@ -3443,6 +3499,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1745704912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745704913}
+  m_Layer: 0
+  m_Name: EventManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1745704913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745704912}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.3, y: -4.5299997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770851190
 GameObject:
   m_ObjectHideFlags: 0
@@ -4155,3 +4242,4 @@ SceneRoots:
   - {fileID: 2117282398}
   - {fileID: 988568138}
   - {fileID: 1016604171}
+  - {fileID: 1745704913}

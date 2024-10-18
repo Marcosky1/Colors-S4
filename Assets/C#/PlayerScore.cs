@@ -6,16 +6,17 @@ public class PlayerScore : MonoBehaviour
     public ScoreEvent scoreEvent;
     void OnEnable()
     {
+        scoreEvent.OnScoreUpdate += AddScore;
     }
 
     void OnDisable()
     {
+        scoreEvent.OnScoreUpdate -= AddScore;
     }
 
     public void AddScore(int value)
     {
         currentScore += value;
-        scoreEvent.RaiseEvent(currentScore);
     }
 }
 
