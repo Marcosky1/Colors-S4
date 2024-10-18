@@ -6,28 +6,28 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     private SpriteRenderer spriteRenderer;
 
+    public LifeEvent lifeEvent;
+    public LifeEvent playerDeathEvent;
     private void Start()
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        GameEvents.OnHealthUpdated?.Invoke(currentHealth);
+        lifeEvent.RaiseEvent(currentHealth);
+        //GameEvents.OnHealthUpdated?.Invoke(currentHealth);
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        GameEvents.OnHealthUpdated?.Invoke(currentHealth);
-
-        if (currentHealth <= 0)
-        {
-            GameEvents.PlayerDied?.Invoke();
-        }
+        lifeEvent.RaiseEvent(currentHealth);
+        //GameEvents.OnHealthUpdated?.Invoke(currentHealth);
     }
 
     public void Heal(int amount)
     {
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-        GameEvents.OnHealthUpdated?.Invoke(currentHealth);
+        lifeEvent.RaiseEvent(currentHealth);
+        //GameEvents.OnHealthUpdated?.Invoke(currentHealth);
     }
 
     private bool IsSameColor(GameObject obstacle)

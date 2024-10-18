@@ -4,15 +4,15 @@ using UnityEngine.UI;
 public class UIScoreDisplay : MonoBehaviour
 {
     public Text scoreText;
-
+    public ScoreEvent scoreEvent;
     void OnEnable()
     {
-        GameEvents.OnScoreUIUpdate += UpdateScoreUI;  
+        scoreEvent.OnScoreUpdate += UpdateScoreUI;
     }
 
     void OnDisable()
     {
-        GameEvents.OnScoreUIUpdate -= UpdateScoreUI;
+        scoreEvent.OnScoreUpdate -= UpdateScoreUI;
     }
 
     void UpdateScoreUI(int currentScore)
