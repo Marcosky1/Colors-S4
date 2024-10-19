@@ -16,15 +16,16 @@ public class EndGameUI : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEvents.PlayerDied += ShowDefeatScreen;
-        GameEvents.PlayerWon += ShowVictoryScreen;
+
+        gameStateEvent.OnGameStateChange += HandleGameStateChange;
+        gameStateEvent.OnNextLevel += LoadNextLevel;
 
     }
 
     private void OnDisable()
     {
-        GameEvents.PlayerDied -= ShowDefeatScreen;
-        GameEvents.PlayerWon -= ShowVictoryScreen;
+        gameStateEvent.OnGameStateChange -= HandleGameStateChange;
+        gameStateEvent.OnNextLevel -= LoadNextLevel;
     }
 
     private void Start()
@@ -34,7 +35,17 @@ public class EndGameUI : MonoBehaviour
         nextLevelButton.onClick.AddListener(LoadNextLevel);
       
     }
-
+    private void HandleGameStateChange(string state)
+    {
+        if (state == "Victory")
+        {
+            ShowVictoryScreen();
+        }
+        else if (state == "Defeat")
+        {
+            ShowDefeatScreen();
+        }
+    }
     private void ShowVictoryScreen()
     {
         resultText.gameObject.SetActive(true);

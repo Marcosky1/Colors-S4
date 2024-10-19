@@ -795,7 +795,7 @@ MonoBehaviour:
   retryButton: {fileID: 1243034240}
   menuButton: {fileID: 1177671183}
   nextLevelButton: {fileID: 1770851191}
-  gameStateEvent: {fileID: 0}
+  gameStateEvent: {fileID: 11400000, guid: 0adfb12bcac25e445a2e6dd1dd08d77f, type: 2}
 --- !u!1 &366919996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+  currentHealth: 0
   lifeEvent: {fileID: 11400000, guid: c2dc70341e8fb5046a7f3f9887ff5098, type: 2}
   playerDeathEvent: {fileID: 11400000, guid: c2dc70341e8fb5046a7f3f9887ff5098, type: 2}
 --- !u!114 &988568135
@@ -1880,7 +1881,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1
-  gameStateEvent: {fileID: 0}
+  gameStateEvent: {fileID: 11400000, guid: 0adfb12bcac25e445a2e6dd1dd08d77f, type: 2}
 --- !u!114 &988568136
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -56,12 +56,16 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("NextLevelObject"))
         {
-            gameStateEvent.RaiseEvent("NextLevel");
+            gameStateEvent.RaiseNextLevel();
         }
 
         if (collision.gameObject.CompareTag("VictoryObject"))
         {
             gameStateEvent.RaiseEvent("Victory");
+        }
+        if (playerHealth.currentHealth <= 0)
+        {
+            gameStateEvent.RaiseEvent("Defeat");
         }
     }
 

@@ -8,8 +8,16 @@ public class GameStateEvent : ScriptableObject
     public delegate void GameStateChange(string state);
     public event GameStateChange OnGameStateChange;
 
+    public delegate void LevelAdvance();
+    public event LevelAdvance OnNextLevel;
+
     public void RaiseEvent(string state)
     {
         OnGameStateChange?.Invoke(state);
+    }
+
+    public void RaiseNextLevel()
+    {
+        OnNextLevel?.Invoke();
     }
 }
